@@ -1,0 +1,13 @@
+let sum_up_to = fn(n) {
+  if n < 1 {
+    0
+  }
+  else {
+    n + sum_up_to(n-1)
+  }
+}
+
+print(sum_up_to(0))     #=> 0
+print(sum_up_to(1))     #=> 1
+print(sum_up_to(2))     #=> 3
+print(sum_up_to(3))     #=> 6

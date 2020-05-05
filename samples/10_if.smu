@@ -1,0 +1,36 @@
+# `if` as a statement
+
+if 1 {
+  print(99)
+}
+else {
+  print(100)
+}                                        #=> 99
+
+# `if` as an expression
+
+print(if 1 { 99 } else { 100 })          #=> 99
+print(if 0 { 99 } else { 100 })          #=> 100
+
+# try relops
+
+print(if 9 < 10 { 1  } else { -1 })      #=> 1
+print(if 10 < 9 { -1 } else {  1 })      #=> 1
+print(if 9 < 9  { -1 } else {  1 })      #=> 1
+
+print(if  9 <= 10 {  1 } else { -1 })    #=> 1
+print(if 10 <=  9 { -1 } else {  1 })    #=> 1
+print(if  9 <=  9 {  1 } else { -1 })    #=> 1
+
+print(if  9 >= 10 { -1 } else {  1 })    #=> 1
+print(if 10 >=  9 {  1 } else { -1 })    #=> 1
+print(if  9 >=  9 {  1 } else { -1 })    #=> 1
+
+print(if  9 > 10 { -1 } else {  1 })     #=> 1
+print(if 10 >  9 {  1 } else { -1 })     #=> 1
+print(if  9 >  9 { -1 } else {  1 })     #=> 1
+
+print(if  9 ==  9 {  1 } else { -1 })    #=> 1
+print(if  9 == 10 { -1 } else {  1 })    #=> 1
+print(if  9 !=  9 { -1 } else {  1 })    #=> 1
+print(if  9 != 10 {  1 } else { -1 })    #=> 1

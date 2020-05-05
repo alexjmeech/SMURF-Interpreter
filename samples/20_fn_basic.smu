@@ -1,0 +1,22 @@
+# no parameters
+
+let f = fn () { 99 }
+print(f())             #=> 99
+
+# one parameter
+
+f = fn(x) { x + 1 }
+print(f(99))          #=> 100
+
+# two parameters
+
+f = fn(x, y) { x + y }
+print(f(99, 2))       #=> 101
+
+# can participate in expressions
+
+print(f(99, 2) - 1)   #=> 100
+
+# can be used in calls to themselves
+
+print(f(99, f(1, 2)))  #=> 102

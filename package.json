@@ -1,0 +1,17 @@
+{
+  "name": "pegjs-parser",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "ava"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "ava": "^3.5.1",
+    "pegjs": "^0.10.0"
+  }
+}
